@@ -1,2 +1,24 @@
-# hoshinoBOT_E7score
-一个自己用的hoshino插件
+# Epic Seven(简称E7) 简陋装备分计算器
+
+### 	已知问题:
+
+​			1.不能计算固定值
+
+​			2.无法识图
+
+​			3.无限套if,是座114514山
+
+​			4.作者初学一天，如果要修改建议直接重写(x
+
+### 	 使用方法：
+
+​			1.下载代码或者git clone本项目(第二个大概是吧，兄弟没用过不知道)
+
+​			2.复制后到bot目录 hoshino\modules\ 中新建E7score文件夹并粘贴进去
+
+​			3.在bot目录 hoshino\config\__bot__.py 中 MODULES_ON 下添加 'E7score',保存并关闭
+
+
+
+### 兄弟写来自己用的，脏了眼睛很抱歉（o´・ェ・｀o）
+
