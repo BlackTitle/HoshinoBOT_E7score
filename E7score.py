@@ -37,16 +37,16 @@ async def feedback(bot, ev: CQEvent):
 
 
     for i in range(0, len(ge)):
-        if len(ge[i]) == 2 and i % 2 != 0:
-            jiancha += 1
+        if len(ge[i]) == 2 and i % 2 != 0 or len(ge[i]) == 2 and i == 0 :
+            jiancha = jiancha + 1
     #检查词条数量
     if len(ge) % 2 == 0:
         cuowu = '指令格式有误.\n指令例:分数 攻击 1 攻击 2 攻击 3 攻击 4'
         await bot.send(ev, cuowu)
         return
     #检查格式防止出现错误
-    elif jiancha == 5:
-        cuowu = '指令格式有误。\n暴击伤害→爆伤、暴击率→暴击、效果命中→命中、效果抗性→抗性\n攻击、防御、生命如是百分比请在前面加. 如:生命 .12'
+    elif jiancha / 2 != 0 :
+        cuowu = '指令格式有误。\n暴击伤害→爆伤、暴击率→暴击、效果命中→命中、效果抗性→抗性\n攻击、防御、生命如是百分比请在前面加"." 如:生命 .12'
         await bot.send(ev, cuowu)
         return
     else:
