@@ -1,24 +1,15 @@
-# Epic Seven(简称E7) 简陋装备分计算器
+# HoshinoBot_E7score
 
-### 	已知问题:
+适用于HoshinoBot的Epic Seven(E7)算分插件
 
-​			1.不能计算固定值
+# 使用方法
 
-​			2.无法识图
+1. 将该项目放在HoshinoBot插件目录 `modules` 下，或者clone本项目 `git clone https://github.com/BlackTitle/hoshinoBOT_E7score.git`
+2. 将插件文件夹改名为`E7score`并在`config/__bot__.py`模块列表中添加`E7score`
+4. 重启BOT
 
-​			3.无限套if,是座114514山
+# 指令
 
-​			4.作者初学一天，如果要修改建议直接重写(x
-
-### 	 使用方法：
-
-​			1.下载代码或者git clone本项目(第二个大概是吧，兄弟没用过不知道)
-
-​			2.复制后到bot目录 hoshino\modules\ 中新建E7score文件夹并粘贴进去
-
-​			3.在bot目录 hoshino\config\__bot__.py 中 MODULES_ON 下添加 'E7score',保存并关闭
-
-
-
-### 兄弟写来自己用的，脏了眼睛很抱歉（o´・ェ・｀o）
-
+| 指令              | 功能     | 说明                            |
+| :---------------- | :------- | :------------------------------ |
+| 分数 属性名1 属性1 | 算分        | 属性名和属性最多可四个 |
