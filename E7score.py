@@ -45,7 +45,7 @@ async def feedback(bot, ev: CQEvent):
         await bot.send(ev, cuowu)
         return
     #检查格式防止出现错误
-    elif jiancha / 2 != 0 :
+    elif jiancha / 2 == 0 :
         cuowu = '指令格式有误。\n暴击伤害→爆伤、暴击率→暴击、效果命中→命中、效果抗性→抗性\n攻击、防御、生命如是百分比请在前面加"." 如:生命 .12'
         await bot.send(ev, cuowu)
         return
