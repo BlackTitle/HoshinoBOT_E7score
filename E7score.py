@@ -39,7 +39,7 @@ async def feedback(bot, ev: CQEvent):
         elif name3 == "暴击":
             score3 = score3 * 1.5
         elif name4 == "暴击":
-            score4 = score4 = 1.5
+            score4 = score4 * 1.5
 
 #寻找爆伤
         if name1 == "爆伤":
@@ -49,7 +49,7 @@ async def feedback(bot, ev: CQEvent):
         elif name3 == "爆伤":
             score3 = score3 * 1.125
         elif name4 == "爆伤":
-            score4 = score4 = 1.125
+            score4 = score4 * 1.125
 
 #寻找速度
         if name1 == "速度":
@@ -59,7 +59,7 @@ async def feedback(bot, ev: CQEvent):
         elif name3 == "速度":
             score3 = score3 * 2
         elif name4 == "速度":
-            score4 = score4 = 2
+            score4 = score4 * 2
 
         scorehe = score1 + score2 + score3 + score4
         shuchu = f'您这件装备的分数为:\n{name1}:{score1}分\n{name2}:{score2}分\n{name3}:{score3}分\n{name4}:{score4}分\n总分为 {scorehe}分.'
